@@ -344,6 +344,3 @@ package.json
 next.config.js
 jsconfig.json
 ```
-=======
-# Deterministic-UI-Generator
->>>>>>> ffced0d67f586393aaf1f5adbba082ed7b77b209
