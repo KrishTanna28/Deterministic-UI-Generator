@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Deterministic UI Generator
 
 An AI-powered application that converts natural language UI descriptions into working React interfaces using a **fixed component system** and a **multi-step AI agent pipeline**.
@@ -344,3 +345,6 @@ package.json
 next.config.js
 jsconfig.json
 ```
+=======
+# Deterministic-UI-Generator
+>>>>>>> ffced0d67f586393aaf1f5adbba082ed7b77b209
