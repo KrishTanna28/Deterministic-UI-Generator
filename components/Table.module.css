@@ -1,0 +1,45 @@
+.container {
+  width: 100%;
+}
+
+.title {
+  margin: 0 0 10px 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.tableWrapper {
+  overflow-x: auto;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.th {
+  text-align: left;
+  padding: 10px 14px;
+  background-color: #f9fafb;
+  color: #374151;
+  font-weight: 500;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.td {
+  padding: 8px 14px;
+  color: #374151;
+  font-size: 13px;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.striped {
+  background-color: #f9fafb;
+}
