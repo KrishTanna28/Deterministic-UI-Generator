@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Deterministic UI Generator
 
 An AI-powered application that converts natural language UI descriptions into working React interfaces using a **fixed component system** and a **multi-step AI agent pipeline**.
@@ -11,35 +10,35 @@ Built with Next.js (App Router), React, plain CSS Modules, `lucide-react` icons,
 
 ```
 ┌──────────────────────────────────────────────────────────┐
-│                      Browser (Client)                     │
-│  ┌─────────────┐    ┌──────────┐    ┌─────────────────┐  │
-│  │  Chat Panel  │    │  Code    │    │  Live Preview   │  │
-│  │  (Left)      │    │  Editor  │    │  (Right)        │  │
-│  └──────┬───────┘    └────┬─────┘    └────────▲────────┘  │
-│         │                 │                    │           │
-│         │   POST /api/generate                 │           │
-│         ▼                 │        React render │           │
-│  ┌──────────────┐         │         from code  │           │
-│  │  API Route   │─────────┘                    │           │
-│  └──────┬───────┘                              │           │
-│         │                                      │           │
-└─────────┼──────────────────────────────────────┼───────────┘
+│                      Browser (Client)                    │
+│  ┌──────────────┐    ┌──────────┐    ┌────────────────┐  │
+│  │  Chat Panel  │    │  Code    │    │  Live Preview  │  │
+│  │  (Left)      │    │  Editor  │    │  (Right)       │  │
+│  └──────┬───────┘    └────┬─────┘    └────────▲───────┘  │
+│         │                 │                    │         │
+│         │   POST /api/generate                 │         │
+│         ▼                 │        React render│         │
+│  ┌──────────────┐         │         from code  │         │
+│  │  API Route   │─────────┘                    │         │
+│  └──────┬───────┘                              │         │
+│         │                                      │         │
+└─────────┼──────────────────────────────────────┼─────────┘
           │                                      │
           ▼                                      │
 ┌──────────────────────────────────────────────────────────┐
-│                   Agent Pipeline (Server)                  │
-│                                                           │
+│                   Agent Pipeline (Server)                │
+│                                                          │
 │  ┌──────────┐    ┌───────────┐    ┌──────────────┐       │
-│  │ Planner  │───▶│ Generator │───▶│  Explainer   │       │
+│  │ Planner  │───▶│ Generator│───▶│  Explainer   │       │
 │  │ (Step 1) │    │ (Step 2)  │    │  (Step 3)    │       │
 │  └────┬─────┘    └─────┬─────┘    └──────┬───────┘       │
-│       │                │                  │               │
-│   validate          validate           return             │
-│    plan               code          explanation            │
-│       │                │                  │               │
-│       ▼                ▼                  ▼               │
+│       │                │                  │              │
+│   validate          validate           return            │
+│    plan               code          explanation          │
+│       │                │                  │              │
+│       ▼                ▼                  ▼              │
 │  ┌────────────────────────────────────────────────┐      │
-│  │           Version Store (In-Memory)             │      │
+│  │           Version Store (In-Memory)            │      │
 │  └────────────────────────────────────────────────┘      │
 └──────────────────────────────────────────────────────────┘
 ```
